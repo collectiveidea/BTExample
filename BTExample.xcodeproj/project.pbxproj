@@ -13,6 +13,9 @@
 		A762441F227B635300A59D87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A762441D227B635300A59D87 /* Main.storyboard */; };
 		A762442B227B635300A59D87 /* BTExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A762442A227B635300A59D87 /* BTExampleTests.swift */; };
 		A7624436227B635300A59D87 /* BTExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7624435227B635300A59D87 /* BTExampleUITests.swift */; };
+		A7624444227B636100A59D87 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7624443227B636100A59D87 /* Services.swift */; };
+		A7E3FB95227B90310056A925 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E3FB94227B90310056A925 /* CoreBluetooth.framework */; };
+		A7E3FB97227B9BA00056A925 /* UUIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3FB96227B9BA00056A925 /* UUIDs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		A7624431227B635300A59D87 /* BTExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7624435227B635300A59D87 /* BTExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTExampleUITests.swift; sourceTree = "<group>"; };
 		A7624437227B635300A59D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7624443227B636100A59D87 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		A7E3FB94227B90310056A925 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		A7E3FB96227B9BA00056A925 /* UUIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7E3FB95227B90310056A925 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +87,7 @@
 				A7624429227B635300A59D87 /* BTExampleTests */,
 				A7624434227B635300A59D87 /* BTExampleUITests */,
 				A7624415227B635200A59D87 /* Products */,
+				A7E3FB93227B90310056A925 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,8 +104,10 @@
 		A7624416227B635200A59D87 /* BTExample */ = {
 			isa = PBXGroup;
 			children = (
+				A7624443227B636100A59D87 /* Services.swift */,
 				A7624417227B635200A59D87 /* AppDelegate.swift */,
 				A7624419227B635200A59D87 /* ViewController.swift */,
+				A7E3FB96227B9BA00056A925 /* UUIDs.swift */,
 				A762441B227B635300A59D87 /* Assets.xcassets */,
 				A762441D227B635300A59D87 /* Main.storyboard */,
 				A7624420227B635300A59D87 /* Info.plist */,
@@ -122,6 +132,14 @@
 				A7624437227B635300A59D87 /* Info.plist */,
 			);
 			path = BTExampleUITests;
+			sourceTree = "<group>";
+		};
+		A7E3FB93227B90310056A925 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3FB94227B90310056A925 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7E3FB97227B9BA00056A925 /* UUIDs.swift in Sources */,
 				A762441A227B635200A59D87 /* ViewController.swift in Sources */,
+				A7624444227B636100A59D87 /* Services.swift in Sources */,
 				A7624418227B635200A59D87 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,7 +441,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = BTExample/BTExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = BTExample/Info.plist;
@@ -439,7 +458,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = BTExample/BTExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = BTExample/Info.plist;
